@@ -1,0 +1,116 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,*::before,*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: red;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to right, #7e36ff, #696ffd);
+    height: 100vh;
+}
+
+.heading {
+    padding-top: 3em;
+    text-align: center;
+}
+
+.heading h1, p {
+    margin: 0;
+    color: white;
+}
+
+.heading p {
+    font-size: 0.9rem;
+    padding-bottom: 2em;
+}
+
+.form-cls {
+    padding: 3em;
+    width: 30%;
+    background-color: white;
+    border-radius: 0.8em;
+}
+
+.form-cls form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    
+}
+
+.form-cls input {
+    padding: 0.8em;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 0.8em;
+}
+
+.form-cls button {
+    border: none;
+    padding: 0.4em;
+    font-size: 1.3rem;
+    border-radius: 0.3em;
+    color: white;
+    font-weight: bold;
+    background-color: #6f6dff;
+    cursor: pointer;
+}
+
+.form-cls a {
+    text-decoration: none;
+    color: #6f6dff;
+}
+
+.form-cls label {
+    display: flex;
+    color: rgb(83, 83, 83);
+}
+
+.forgot-pswd {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.p2 {
+    padding-top: 1em;
+    color: rgb(83, 83, 83);
+    text-align: end;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .form-cls {
+        min-width: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+    .form-cls {
+        min-width: 60%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .form-cls {
+        min-width: 90%;
+    }
+
+}
