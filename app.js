@@ -1,10 +1,7 @@
 
 const db = {
-    anna:{username:"anna",password:123},
-    jack:{username:"jack",password:123},
+    anna:{username:"anna",password:123}
 }
-
-window.onload = console.log(db);
 
 function login() {
     const username = document.querySelector('#uname');
